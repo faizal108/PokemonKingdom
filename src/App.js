@@ -7,7 +7,7 @@ import PokemonThumbnail from "./Components/PokemonThumbnail";
 
 function App() {
   const [allPokemons,setAllPokemons] = useState([]);
-  const [loadPoke,setLoadPoke] = useState('https://pokeapi.co/api/v2/pokemon?limit=20');
+  const [loadPoke,setLoadPoke] = useState('https://pokeapi.co/api/v2/pokemon?limit=5');
   const getAllPokemons = async () =>{
     const res = await fetch(loadPoke)
     const data = await res.json()
